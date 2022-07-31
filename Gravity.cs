@@ -16,7 +16,7 @@ public class Gravity : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!hasGravity)
+        if (hasGravity)
         {
             Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();
             Vector2 gravityForce = Vector2.up;
